@@ -2,7 +2,7 @@
 
 # Dota 2
 
-This is a website about what is Dota 2, My Top 5 Personal Favorites Dota 2 Heroes, Top 3 Dota 2 Team Ranking and Top 3 Dota 2 Players Earning
+This is a website about what is Dota 2
 
 ![Dota-2-Logo](./img/dota-2-logo.png)
 
