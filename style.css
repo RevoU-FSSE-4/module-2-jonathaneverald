@@ -1,0 +1,332 @@
+* {
+  margin: 0;
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  background-color: rgb(64, 68, 71);
+}
+
+.top-nav-bar {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: flex-end;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.top-nav-bar a {
+  color: white;
+  padding: 18px 18px;
+  text-decoration: solid;
+}
+
+.top-nav-bar a:hover {
+  background-color: rgb(54, 53, 51);
+  color: rgb(255, 255, 255);
+}
+
+.top-nav-bar a.active {
+  background-color: rgb(54, 53, 51);
+  color: white;
+}
+
+header {
+  text-align: center;
+  color: white;
+  background-color: rgba(53, 50, 50, 0.685);
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(img/dota-2-background-image.jpg);
+  background-size: contain;
+}
+
+/* Section  */
+.section {
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+.what-is-dota-2 {
+  display: flex;
+  gap: 1em;
+  padding: 1em;
+  color: white;
+  font-size: 1em;
+}
+.what-is-dota-2 p {
+  animation: 1s fadeIn;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+
+  visibility: hidden;
+}
+
+.section-2 > h2 {
+  font-size: xx-large;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: solid;
+  color: black;
+  text-shadow: 5px 5px 15px red;
+}
+.str-attr {
+  font-size: x-large;
+  font-weight: 450;
+  text-transform: uppercase;
+  text-decoration: solid;
+  color: red;
+  text-shadow: 5px 5px 5px black;
+  padding-top: 1em;
+}
+.agi-attr {
+  font-size: x-large;
+  font-weight: 450;
+  text-transform: uppercase;
+  text-decoration: solid;
+  color: green;
+  text-shadow: 5px 5px 5px black;
+  padding-top: 1em;
+}
+.int-attr {
+  font-size: x-large;
+  font-weight: 450;
+  text-transform: uppercase;
+  text-decoration: solid;
+  color: rgb(136, 206, 230);
+  text-shadow: 5px 5px 5px black;
+  padding-top: 1em;
+}
+.uni-attr {
+  font-size: x-large;
+  font-weight: 450;
+  text-transform: uppercase;
+  text-decoration: solid;
+  background: linear-gradient(
+    to right,
+    red 10%,
+    green 35%,
+    rgb(136, 206, 230) 100%
+  );
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 1em;
+}
+.section-3 > h2 {
+  font-size: xx-large;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: solid;
+  color: black;
+  text-shadow: 5px 5px 15px red;
+}
+.dota-2-facts {
+  color: white;
+  font-size: 1em;
+  padding: 0em 1em;
+}
+#facts {
+  list-style-position: outside;
+  list-style-image: url(./img/list-logo.png);
+}
+#facts > li {
+  margin: 1em 0;
+}
+
+/* GRID LAYOUT  */
+.grid-container-heroes {
+  display: grid;
+  grid-template-columns: repeat(4, 320px);
+  grid-template-rows: repeat(2, 165px);
+  gap: 10px;
+  padding: 1em;
+}
+.strength {
+  animation: 2s slide 2s forwards;
+  transform: translateX(-100%);
+}
+.agility {
+  animation: 2s slide 2s forwards;
+  transform: translateX(100%);
+}
+.intelligence {
+  animation: 2s slide 2s forwards;
+  transform: translateX(-100%);
+}
+.universal {
+  animation: 2s slide 2s forwards;
+  transform: translateX(100%);
+}
+.grid-item {
+  background-color: black;
+  border: 2px solid black;
+  border-radius: 6px;
+  filter: grayscale(100%);
+  cursor: pointer;
+  transition: 3s;
+}
+.grid-item > img {
+  object-fit: cover;
+  width: 100%;
+  max-height: 100%;
+}
+.grid-item:hover {
+  filter: grayscale(0%);
+  width: 110%;
+  height: 110%;
+  z-index: 100;
+}
+.one {
+  grid-column: 1 / span 1;
+  grid-row: 1 / span 2;
+}
+.two {
+  grid-column: 2;
+  grid-row: 1;
+}
+.three {
+  grid-column: 3;
+  grid-row: 1;
+}
+.four {
+  grid-column: 4;
+  grid-row: 1;
+}
+.five {
+  grid-column: 2;
+  grid-row: 2;
+}
+.six {
+  grid-column: 3;
+  grid-row: 2;
+}
+.seven {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+/* Animation  */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@keyframes slide {
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  width: auto;
+  padding: 30px;
+  background-color: black;
+}
+.footerLogo {
+  margin: auto;
+  max-width: 360px;
+  display: flex;
+  justify-content: space-between;
+}
+.valveLogo {
+  margin: 0px 15px 20px 15px;
+  max-height: 30px;
+}
+.dotaLogo {
+  margin: 0px 15px 20px 15px;
+  max-height: 30px;
+}
+.copyright {
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .what-is-dota-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 2em;
+    font-size: 75%;
+  }
+  .section-2 > h2 {
+    font-size: large;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: solid;
+    color: white;
+  }
+  .dota-2-facts {
+    font-size: 75%;
+  }
+  .grid-container-heroes {
+    display: grid;
+    grid-template-columns: repeat(2, 160px);
+    grid-template-rows: repeat(5, 80px);
+    gap: 10px;
+    padding: 1em;
+  }
+  .str-attr {
+    font-size: medium;
+  }
+  .agi-attr {
+    font-size: medium;
+  }
+  .int-attr {
+    font-size: medium;
+  }
+  .uni-attr {
+    font-size: medium;
+  }
+  .one {
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+  }
+  .two {
+    grid-column: 1;
+    grid-row: 3;
+  }
+  .three {
+    grid-column: 2;
+    grid-row: 3;
+  }
+  .four {
+    grid-column: 1;
+    grid-row: 4;
+  }
+  .five {
+    grid-column: 2;
+    grid-row: 4;
+  }
+  .six {
+    grid-column: 1;
+    grid-row: 5;
+  }
+  .seven {
+    grid-column: 2;
+    grid-row: 5;
+  }
+}
