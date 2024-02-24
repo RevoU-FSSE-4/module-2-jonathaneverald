@@ -322,6 +322,124 @@
           </ul>
         </div>
       </section>
+
+      <section class="section section-4">
+        <h2>Questionnaire about Dota 2</h2>
+        <form>
+          <div class="grid-container-form">
+            <div class="name">
+              <label for="name">Name :</label><br />
+              <input type="text" id="name" value="" /><br />
+            </div>
+            <div class="date-of-birth">
+              <label for="date-of-birth">Date of Birth :</label><br />
+              <input type="date" id="date-of-birth" value="" /><br />
+            </div>
+            <div class="address">
+              <label for="address">Address :</label><br />
+              <textarea id="address" cols="20" rows="4"></textarea><br />
+            </div>
+            <div class="genders">
+              <label for="genders">Gender :</label><br />
+              <select name="genders" id="genders">
+                <option value="male">Male</option>
+                <option value="female">Female</option></select
+              ><br /><br />
+            </div>
+            <div class="playing-dota">
+              <label for="playingDota" id="playingDota"
+                >Do you play Dota 2 ?</label
+              ><br />
+              <input type="radio" id="yes" value="Yes" />
+              <label for="yes">Yes</label><br />
+              <input type="radio" id="no" value="No" />
+              <label for="no">No</label><br /><br />
+            </div>
+            <div class="dota-2-logo-color">
+              <label for="dota-2-color"
+                >What color is the logo for dota 2 ?</label
+              >
+              <br />
+              <input
+                type="color"
+                id="dota-2-color"
+                name="dota-2-color"
+                value="#ffffff"
+              />
+            </div>
+            <div class="how-long">
+              <label for="howLong" id="howLong"
+                >How long have you been playing Dota 2 ?</label
+              ><br />
+              <input type="radio" id="beginner" value="Beginner" />
+              <label for="beginner">0 - 3000 hours (Beginner)</label><br />
+              <input type="radio" id="intermediate" value="Intermediate" />
+              <label for="intermediate">3000 - 6000 hours (Intermediate)</label
+              ><br />
+              <input type="radio" id="advanced" value="Advanced" />
+              <label for="advanced">6000 - 12000 hours (Advanced)</label><br />
+              <input type="radio" id="pro" value="Pro" />
+              <label for="pro">12000 hours+ (Pro Player)</label><br /><br />
+            </div>
+            <div class="dota-username">
+              <label for="dota-username">What is your dota 2 username ?</label>
+              <br />
+              <input
+                type="text"
+                id="dota-username"
+                name="dota-username"
+              /><br /><br />
+              <input
+                type="hidden"
+                id="usernameId"
+                name="usernameId"
+                value="0001"
+              />
+            </div>
+            <div class="role-dota">
+              <label for="roleDota" id="roleDota"
+                >What is your roles in Dota 2 ? (You can select one or
+                more)</label
+              ><br />
+              <input type="checkbox" id="role1" name="role1" value="Carry" />
+              <label for="role1"> Position 1 (Carry)</label><br />
+              <input type="checkbox" id="role2" name="role2" value="Midlaner" />
+              <label for="role2"> Position 2 (Midlaner)</label><br />
+              <input type="checkbox" id="role3" name="role3" value="Offlaner" />
+              <label for="role3"> Position 3 (Offlaner)</label><br />
+              <input type="checkbox" id="role4" name="role4" value="Support" />
+              <label for="role4"> Position 4 (Support)</label><br />
+              <input
+                type="checkbox"
+                id="role5"
+                name="role5"
+                value="HardSupport"
+              />
+              <label for="role5"> Position 5 (Hard Support)</label><br /><br />
+            </div>
+            <div class="search-hero">
+              <label for="search-hero">Search Your Favourite Hero:</label>
+              <br />
+              <input type="search" id="searchHero" name="search-hero" />
+            </div>
+            <div class="dota-rate">
+              <label for="vol"
+                >On the scale of 1-10, how much do you rate your skills in Dota
+                2?</label
+              >
+              <br />
+              <input type="range" id="vol" name="vol" min="1" max="10" />
+            </div>
+            <div class="input-date">
+              <label for="input-date"
+                >Enter the date you answer this Questionnaire</label
+              ><br />
+              <input type="datetime-local" id="inputDate" value="" /><br />
+            </div>
+          </div>
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
     </main>
 
     <footer class="footer">
