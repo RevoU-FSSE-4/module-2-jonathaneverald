@@ -57,4 +57,34 @@ You can access module 2 checkpoint website with this [link!](https://65d9f928c4a
 
 ## Auto Deployment on GitHub with Netlify
 
+### Verify the Website Connection to GitHub
+
+- To check if auto deployment is working, first make sure the website you deployed is connected to the GitHub repository.
+- You can see this in the Site Overview menu on Netlify.
+
+  ![Check Website Connected to Github](./img/auto-deploy-1.png)
+
+### Make Changes to the Website Code
+
+- Next, open the website of the project that is already connected to GitHub and try to make changes to the website through the project's code content.
+- In this case, we will try to change the background color of the website.
+- Then, do git add, git commit, and git push to the main branch of the project in GitHub.
+
+  #### Website Pages Before Changes
+
+  ![Website before changes](./img/auto-deploy-2.png)
+
+### Check for Auto Deployment on Netlify & Verify the Website Updates
+
+- After pushing to the main branch, you can check on Netlify if your project has been automatically deployed through the Production Deploys menu.
+- If the production status is Published, you can open the website to check if it has been updated according to what you pushed to the main branch.
+
+  ![Production Deploys Status](./img/auto-deploy-4.png)
+
+### Confirm Successful Auto Deployment
+
+- If the website has changed, then the auto deployment process from GitHub through Netlify has been successful.
+  #### Website Pages After Changes
+  ![Website after changes](./img/auto-deploy-3.png)
+
 ## How to connect custom domain and DNS
