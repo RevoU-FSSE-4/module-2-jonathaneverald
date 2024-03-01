@@ -88,3 +88,30 @@ You can access module 2 checkpoint website with this [link!](https://65d9f928c4a
   ![Website after changes](./img/auto-deploy-3.png)
 
 ## How to connect custom domain and DNS
+
+### Purchasing a Domain on Niagahoster:
+
+- Open the Niagahoster website: Go to https://www.niagahoster.co.id/ and click "Cari & Cek Domain" (Search & Check Domain) on the main page.
+  ![Check Domain](./img/domain-1.png)
+- Enter your desired domain name: For example, type in dota2byjonathan.site. Then click the "Cek Sekarang" (Check Now) button.
+  ![Enter Domain Name](./img/domain-2.png)
+- Select your domain: If the domain is available, click the "Pilih" (Choose) button.
+  ![Domain Name Availability](./img/domain-3.png)
+- Complete the payment: Choose a suitable payment method and complete the purchase.
+- Finish domain registration: Complete the registration process for your new domain.
+- Wait for review: Please wait while your newly created domain is being reviewed.
+  ![Domain Review](./img/domain-4.png)
+
+### Connecting the Domain to Netlify:
+
+- Open your Netlify project: Access your project on the Netlify platform. Click "Set up a custom domain" and enter the domain name you purchased.
+  ![Set up Domain Netlify](./img/domain-5.png)
+- Copy DNS records: Open the DNS configuration section on Netlify and copy all the DNS records provided.
+  ![Netlify DNS Config](./img/domain-6.png)
+- Open Niagahoster domain settings: Go back to the domain overview page on Niagahoster and click the "Change" button in the nameservers section.
+  ![Change Nameservers](./img/domain-7.png)
+- Paste DNS records: Paste the DNS records you copied from Netlify into the Niagahoster nameservers section. Click "Save".
+  ![Change Nameservers with Netlify DNS](./img/domain-8.png)
+- Wait for DNS update: Allow time for the external DNS on Netlify to update (this can take up to 24 hours).
+- Access your website: Once the external DNS update is complete, your website should be accessible through the domain you entered.
+  ![Access website with domain](./img/domain-9.png)
